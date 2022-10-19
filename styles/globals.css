@@ -1,0 +1,222 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.row,
+.marginTop {
+  margin-top: 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+span {
+  cursor: pointer;
+  position: relative;
+  top: -0.5px;
+  font-size: 0.7rem;
+  color: rgb(229, 229, 229);
+}
+p{
+  color:red;
+  font-size: 0.7rem;
+}
+.submitBtn{
+  margin-top: 10px;
+}
+.image-uploading{
+  color:rgb(132, 52, 52)
+}
+.skills-input::placeholder{
+  font-size: 0.6rem;
+}
+.wrapper {
+  border: 1px solid lightgray;
+  padding: 10px;
+  position: relative;
+  width: 485px;
+  margin-bottom: 30px;
+}
+.inner-wrapper {
+  border: 1px solid lightgray;
+  padding: 10px;
+  position: relative;
+  margin-top: 10px;
+}
+.remove-btn {
+  position: absolute;
+  right: 0px;
+  top: -15px;
+  z-index: 1;
+  border-radius: 50%;
+  padding-left: 8px;
+  padding-right: 8px;
+
+}
+.add-button {
+  position: absolute;
+  right: 5px;
+  border-radius: 50%;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.mapped-skills {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 25px;
+  width: auto;
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+.superscript-tag:hover {
+  background-color: gray;
+}
+.superscript-tag {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-radius: 50%;
+  padding: 4px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  margin-left: 5px;
+  position: relative;
+  top: -2px;
+}
+.skills-wrapper {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+.skills-input {
+  width: 60px;
+  height: 20px;
+  padding: 0px 2px;
+  margin-left: 10px;
+  height: 25px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+* {
+  box-sizing: border-box;
+}
+.display-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.employee-registration-form {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .employee-registration-form {
+    width: 100%;
+  }
+}
+@media (max-width: 481px) {
+  .btn-primary {
+    font-size: 10px;
+  }
+}
+@media only screen and (min-width:1200px) and (max-width:1399px)
+{
+  .wrapper{
+    width: 415px;
+  }
+}
+@media only screen and (min-width:992px) and (max-width:1199px)
+{
+  .wrapper{
+    width: 350px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px)
+{
+  .wrapper{
+    width: 230px;
+  }
+  
+}
+@media only screen and (min-width:576px) and (max-width:767px)
+{
+  .wrapper{
+    width: 385px;
+  }
+  
+}
+@media (max-width:575px)
+{
+  .wrapper{
+    width: 74%;
+  }
+}
+/* Input Placeholder */
+input::-moz-placeholder,
+.form-control::-moz-placeholder {
+  font-size: 14px;
+  color: #b2bcd6;
+  font-weight: 500;
+  opacity: 1;
+}
+
+input::placeholder,
+.form-control::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b2bcd6;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder,
+.form-control:-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b2bcd6;
+}
+
+input::-ms-input-placeholder,
+.form-control::-ms-input-placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b2bcd6;
+}
+
+input,
+.form-control {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: #eef3ff;
+  color: #4a4f61;
+  font-weight: 500;
+  border: none;
+  padding: 16px 24px;
+  width: 100%;
+}
+
+input:focus,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #4a4f61;
+  font-weight: 500;
+  background: #eef3ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
