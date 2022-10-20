@@ -1,13 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Cookie from 'js-cookie';
 import { storage, db } from '../utils/firebase-config';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { v4 } from 'uuid';
 import { collection, addDoc } from 'firebase/firestore';
-
+import Router, { useRouter } from 'next/router';
 import Skills from '../Components/Skills';
 import Languages from '../Components/Languages';
 import EmployeeEducation from '../Components/EmployeeEducation';
@@ -140,9 +141,14 @@ const EmployeeForm = () => {
       { jobTitle: '', companyName: '', duration: '', description: '' },
     ]);
   };
+  const handleLogout = () => {
+    Cookie.remove('token');
+    Router.push('/login');
+  };
 
   return (
     <Container>
+      <button onClick={handleLogout}>Logout</button>
       <div className="display-flex">
         <div className="employee-registration-form">
           <form>

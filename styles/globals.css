@@ -112,7 +112,23 @@ p{
 .employee-registration-form {
   width: 50%;
 }
-
+img{
+  width:100%
+}
+h1{
+  text-align: center;
+}
+label{
+  margin-top: 25px;
+}
+.input-fields-wrapper{
+  margin-top:20%;
+}
+.login-btn{
+  margin-top: 15px;
+  float:right;
+  margin-right: 15px;
+}
 @media (max-width: 767px) {
   .employee-registration-form {
     width: 100%;
